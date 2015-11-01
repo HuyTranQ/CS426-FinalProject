@@ -1,0 +1,59 @@
+
+
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.huytr.finalproject20.ActivityAccess"
+    android:orientation="vertical">
+
+    <ImageView  android:id="@+id/Background"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:adjustViewBounds="true"
+        android:scaleType="fitXY"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:background="#99000000">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="3"
+            android:orientation="vertical">
+
+            <ImageView  android:id="@+id/Logo"
+                android:layout_width="128dp"
+                android:layout_height="128dp"
+                android:layout_margin="32dp"
+                android:layout_gravity="top|center_horizontal"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="2"
+            android:gravity="center">
+
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="48dp"
+                android:layout_marginRight="48dp"
+                android:text="Sign In "
+                android:background="@color/colorPrimary"
+                android:onClick="SignIn"
+                android:textSize="16sp"
+                android:textColor="#FFF"
+                android:drawableLeft="@drawable/button_facebook"
+                android:padding="10dp"/>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</FrameLayout>

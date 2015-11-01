@@ -1,0 +1,21 @@
+<resources>
+    <string name="app_name">C\'money</string>
+    <string name="title_activity_activity_access">ActivityAccess</string>
+
+    <string name="hello_world">Hello world!</string>
+    <string name="action_settings">Settings</string>
+    <string name="title_activity_activity_main">ActivityMain</string>
+
+<!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="open">Open Navigation</string>
+    <string name="close">Close Navigation</string>
+    <string name="title_activity_activity_category_add">ActivityCategoryAdd</string>
+    <string name="title_activity_activity_icon">ActivityIcon</string>
+    <string name="title_activity_activity_wallet_add">ActivityWalletAdd</string>
+    <string name="title_activity_activity_transaction_add">ActivityTransactionAdd</string>
+    <string name="title_activity_activity_category_choose">ActivityCategoryChoose</string>
+    <string name="title_activity_activity_transaction_view">ActivityTransactionView</string>
+    <string name="title_activity_activity_location_choose">ActivityLocationChoose</string>
+    <string name="title_activity_activity_location_view">ActivityLocationView</string>
+</resources>

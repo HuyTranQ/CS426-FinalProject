@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <group
+        android:checkableBehavior="single">
+
+        <item   android:id="@+id/MenuWallets"
+            android:title="Wallets"
+            android:icon="@drawable/menu_wallets"/>
+
+        <item   android:id="@+id/MenuTransactions"
+            android:title="Transactions"
+            android:icon="@drawable/menu_transaction"/>
+
+        <item   android:id="@+id/MenuCategories"
+            android:title="Categories"
+            android:icon="@drawable/menu_categories"/>
+
+        <item   android:id="@+id/MenuStatistics"
+            android:title="Annual Statistics"
+            android:icon="@drawable/menu_statistics"/>
+
+        <item   android:id="@+id/MenuEvents"
+            android:title="Events"
+            android:icon="@drawable/menu_events"/>
+
+        <item   android:id="@+id/MenuSavings"
+            android:title="Savings"
+            android:icon="@drawable/menu_savings"/>
+
+    </group>
+
+    <item   android:title="System">
+
+        <menu>
+            <item   android:id="@+id/MenuSettings"
+                android:title="Settings"
+                android:icon="@drawable/menu_settings"/>
+            <item   android:id="@+id/MenuAbout"
+                android:title="About"
+                android:icon="@drawable/menu_about"/>
+        </menu>
+
+    </item>
+
+</menu>

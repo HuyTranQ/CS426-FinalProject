@@ -1,0 +1,43 @@
+<android.support.design.widget.CoordinatorLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context="com.example.huytr.finalproject20.FragmentTransactions">
+
+    <android.support.design.widget.AppBarLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <android.support.v7.widget.Toolbar  android:id="@+id/Toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="56dp"
+            app:popupTheme="@style/ThemeOverlay.AppCompat.Light"
+            app:theme="@style/ThemeOverlay.AppCompat.Dark"/>
+
+        <android.support.design.widget.TabLayout    android:id="@+id/TabLayout"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            app:tabSelectedTextColor="#FFF"
+            app:tabIndicatorColor="#FFF"
+            app:tabIndicatorHeight="3dp"
+            app:tabMode="scrollable"/>
+
+    </android.support.design.widget.AppBarLayout>
+
+    <android.support.v4.view.ViewPager  android:id="@+id/ViewPager"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:layout_behavior="@string/appbar_scrolling_view_behavior"/>
+
+    <android.support.design.widget.FloatingActionButton android:id="@+id/ActionButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:borderWidth="0dp"
+        app:elevation="10dp"
+        android:layout_gravity="bottom|right"
+        android:layout_margin="24dp"
+        android:src="@drawable/button_add"/>
+
+</android.support.design.widget.CoordinatorLayout>

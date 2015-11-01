@@ -1,0 +1,139 @@
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.example.huytr.finalproject20.FragmentPieChart">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="64dp"
+            android:text="Expense Categories"
+            android:textSize="24sp"
+            android:gravity="center"/>
+
+        <com.github.mikephil.charting.charts.PieChart   android:id="@+id/PieChartExpense"
+            android:layout_width="match_parent"
+            android:layout_height="400dp"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:text="Legends"
+                android:textSize="16sp"
+                android:gravity="center_vertical|right"/>
+
+            <android.support.v7.widget.RecyclerView android:id="@+id/ExpenseView"
+                android:layout_width="0dp"
+                android:layout_height="32dp"
+                android:paddingRight="16dp"
+                android:layout_marginLeft="16dp"
+                android:clipToPadding="false"
+                android:layout_weight="4"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="8dp">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Neglected\nValues"
+                android:textSize="16sp"
+                android:gravity="center_vertical|right"/>
+
+            <android.support.v7.widget.RecyclerView android:id="@+id/AdditionalExpense"
+                android:layout_width="0dp"
+                android:layout_height="32dp"
+                android:paddingRight="16dp"
+                android:layout_marginLeft="16dp"
+                android:clipToPadding="false"
+                android:layout_weight="4"/>
+
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:background="#9e9e9e"
+            android:layout_marginTop="16dp"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="64dp"
+            android:text="Income Categories"
+            android:textSize="24sp"
+            android:gravity="center"/>
+
+        <com.github.mikephil.charting.charts.PieChart   android:id="@+id/PieChartIncome"
+            android:layout_width="match_parent"
+            android:layout_height="400dp"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:text="Legends"
+                android:textSize="16sp"
+                android:gravity="center_vertical|right"/>
+
+            <android.support.v7.widget.RecyclerView android:id="@+id/IncomeView"
+                android:layout_width="0dp"
+                android:layout_height="32dp"
+                android:paddingRight="16dp"
+                android:layout_marginLeft="16dp"
+                android:clipToPadding="false"
+                android:layout_weight="4"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="8dp"
+            android:layout_marginBottom="16dp">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Neglected\nValues"
+                android:textSize="16sp"
+                android:gravity="center_vertical|right"/>
+
+            <android.support.v7.widget.RecyclerView android:id="@+id/AdditionalIncome"
+                android:layout_width="0dp"
+                android:layout_height="32dp"
+                android:paddingRight="16dp"
+                android:layout_marginLeft="16dp"
+                android:clipToPadding="false"
+                android:layout_weight="4"/>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</ScrollView>

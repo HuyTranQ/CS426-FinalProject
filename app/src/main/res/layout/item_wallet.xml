@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.CardView android:id="@+id/CardView"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginLeft="16dp"
+    android:layout_marginStart="16dp"
+    android:layout_marginRight="16dp"
+    android:layout_marginEnd="16dp"
+    android:layout_marginTop="8dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:layout_marginLeft="16dp"
+        android:layout_marginRight="16dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginBottom="16dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="2"
+                    android:orientation="horizontal">
+
+                    <TextView   android:id="@+id/Currency"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:gravity="center"
+                        android:text="$"
+                        android:layout_marginRight="8dp"/>
+
+                    <TextView   android:id="@+id/Balance"
+                        android:layout_weight="1"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:text="0"
+                        android:textSize="18sp"
+                        android:textColor="@color/colorPrimaryDark"
+                        android:gravity="center_vertical|left"
+                        android:paddingRight="8dp"
+                        android:typeface="monospace"/>
+                </LinearLayout>
+
+                <TextView   android:id="@+id/Title"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Wallet Title"
+                    android:textColor="@color/colorPrimaryDark"
+                    android:textSize="24sp"
+                    android:layout_marginBottom="8dp"
+                    android:singleLine="true"/>
+            </LinearLayout>
+
+            <ImageView  android:id="@+id/Avatar"
+                android:layout_width="64dp"
+                android:layout_height="64dp"/>
+
+        </LinearLayout>
+
+        <TextView   android:id="@+id/Description"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom"
+            android:layout_marginTop="8dp"
+            android:text="Description"
+            android:textSize="16sp"/>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="0dp"
+            android:orientation="horizontal"
+            android:layout_weight="1"
+            android:layout_gravity="end"
+            android:layout_marginTop="8dp">
+
+            <ImageView  android:id="@+id/Edit"
+                android:layout_width="32dp"
+                android:layout_height="32dp"
+                android:src="@drawable/icon_edit"
+                android:background="?attr/selectableItemBackgroundBorderless"/>
+
+            <ImageView  android:id="@+id/Delete"
+                android:layout_width="32dp"
+                android:layout_height="32dp"
+                android:src="@drawable/icon_delete"
+                android:layout_marginLeft="32dp"
+                android:background="?attr/selectableItemBackgroundBorderless"/>
+
+        </LinearLayout>
+
+    </LinearLayout>
+</android.support.v7.widget.CardView>

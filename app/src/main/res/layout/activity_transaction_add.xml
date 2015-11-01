@@ -1,0 +1,184 @@
+<android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+xmlns:tools="http://schemas.android.com/tools"
+xmlns:app="http://schemas.android.com/apk/res-auto"
+android:layout_width="match_parent"
+android:layout_height="match_parent"
+tools:context="com.example.huytr.finalproject20.ActivityTransactionAdd">
+
+    <android.support.design.widget.AppBarLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <android.support.v7.widget.Toolbar  android:id="@+id/Toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_marginTop="56dp"
+                android:layout_marginBottom="16dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="80dp"
+                    android:orientation="horizontal"
+                    android:layout_marginLeft="48dp"
+                    android:layout_marginRight="16dp">
+
+                    <LinearLayout
+                        android:orientation="horizontal" android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                        <FrameLayout    android:id="@+id/FrameLayout"
+                            android:layout_width="56dp"
+                            android:layout_height="56dp">
+
+                            <de.hdodenhof.circleimageview.CircleImageView   android:id="@+id/Background"
+                                android:layout_width="56dp"
+                                android:layout_height="56dp"
+                                android:layout_gravity="center"
+                                android:src="@drawable/background_unknown"/>
+
+                            <ImageView  android:id="@+id/Avatar"
+                                android:layout_width="42dp"
+                                android:layout_height="42dp"
+                                android:layout_gravity="center"
+                                android:adjustViewBounds="true"
+                                android:src="@drawable/button_question"/>
+
+                        </FrameLayout>
+
+                        <TextView   android:id="@+id/RootName"
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1"
+                            android:text="Category"
+                            android:textColor="#FFF"
+                            android:textSize="24sp"
+                            android:layout_marginLeft="16dp"
+                            android:gravity="center_vertical"
+                            android:singleLine="true"/>
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+                <android.support.design.widget.TextInputLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="72dp"
+                    android:layout_marginTop="8dp"
+                    android:layout_marginLeft="48dp"
+                    android:layout_marginRight="16dp"
+                    android:theme="@style/EditText">
+
+                    <android.support.v7.widget.AppCompatEditText
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/Description"
+                        android:layout_gravity="center_horizontal"
+                        android:hint="Description"
+                        android:textColor="#f1f8e9"
+                        android:textSize="18sp"/>
+                </android.support.design.widget.TextInputLayout>
+
+            </LinearLayout>
+
+        </android.support.v7.widget.Toolbar>
+
+    </android.support.design.widget.AppBarLayout>
+
+    <android.support.design.widget.FloatingActionButton android:id="@+id/ActionButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="8dp"
+        app:borderWidth="0dp"
+        android:elevation="7dp"
+        android:src="@drawable/button_tick"
+        app:layout_anchor="@id/Toolbar"
+        app:layout_anchorGravity="bottom"/>
+
+    <LinearLayout android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_behavior="@string/appbar_scrolling_view_behavior"
+        android:paddingTop="48dp"
+        android:paddingLeft="72dp"
+        android:paddingRight="16dp">
+
+        <android.support.design.widget.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="number"
+                android:ems="10"
+                android:id="@+id/Money"
+                android:layout_gravity="center_horizontal"
+                android:hint="Amount of Money"/>
+
+        </android.support.design.widget.TextInputLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_gravity="center_vertical"
+            android:layout_marginTop="32dp">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:text="   Date:"
+                android:textSize="18sp"
+                android:textColor="@color/colorAccent"
+                android:gravity="center_vertical"
+                android:paddingLeft="1dp"
+                android:drawableLeft="@drawable/label_calendar"/>
+
+            <TextView   android:id="@+id/DateView"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:text="Today"
+                android:textSize="18sp"
+                android:gravity="right|center_vertical"
+                android:textColor="#000"
+                android:background="?android:attr/selectableItemBackground"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="32dp">
+            
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:textColor="@color/colorAccent"
+                android:text="   Location:"
+                android:textSize="18sp"
+                android:gravity="center_vertical"
+                android:drawableLeft="@drawable/label_location"/>
+
+            <TextView   android:id="@+id/Location"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:text="(1.123 , 34.123)"
+                android:textSize="18sp"
+                android:gravity="right|center_vertical"
+                android:background="?android:attr/selectableItemBackground"/>
+            
+        </LinearLayout>
+
+    </LinearLayout>
+
+</android.support.design.widget.CoordinatorLayout>

@@ -1,0 +1,103 @@
+<android.support.design.widget.CoordinatorLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context="com.example.huytr.finalproject20.ActivityCategoryAdd">
+
+    <android.support.design.widget.AppBarLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <android.support.v7.widget.Toolbar  android:id="@+id/Toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="56dp"
+            app:popupTheme="@style/ThemeOverlay.AppCompat.Light"
+            app:theme="@style/ThemeOverlay.AppCompat.Dark"/>
+
+    </android.support.design.widget.AppBarLayout>
+
+    <android.support.design.widget.FloatingActionButton android:id="@+id/ActionButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="16dp"
+        app:borderWidth="0dp"
+        android:elevation="5dp"
+        android:src="@drawable/button_tick"
+        app:layout_anchor="@id/Toolbar"
+        app:layout_anchorGravity="bottom|end"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:layout_behavior="@string/appbar_scrolling_view_behavior"
+        android:paddingTop="48dp"
+        android:orientation="vertical">
+
+        <android.support.design.widget.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="48dp"
+            android:layout_marginRight="72dp">
+
+            <EditText   android:id="@+id/CategoryName"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:layout_gravity="center_horizontal"
+                android:hint="Category Name"/>
+
+        </android.support.design.widget.TextInputLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginLeft="48dp"
+            android:layout_marginRight="72dp"
+            android:layout_marginTop="16dp">
+
+            <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:orientation="horizontal" android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingLeft="16dp"
+                android:paddingRight="16dp"
+                android:paddingTop="16dp"
+                android:paddingBottom="16dp">
+
+                <FrameLayout    android:id="@+id/FrameLayout"
+                    android:layout_width="56dp"
+                    android:layout_height="56dp">
+
+                    <de.hdodenhof.circleimageview.CircleImageView   android:id="@+id/Background"
+                        android:layout_width="56dp"
+                        android:layout_height="56dp"
+                        android:layout_gravity="center"
+                        android:src="@drawable/background_unknown"/>
+
+                    <ImageView  android:id="@+id/Avatar"
+                        android:layout_width="42dp"
+                        android:layout_height="42dp"
+                        android:layout_gravity="center"
+                        android:adjustViewBounds="true"
+                        android:src="@drawable/button_question"/>
+
+                </FrameLayout>
+
+                <TextView   android:id="@+id/RootName"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:text="Category"
+                    android:textSize="24sp"
+                    android:layout_marginLeft="16dp"
+                    android:gravity="center_vertical"/>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</android.support.design.widget.CoordinatorLayout>
